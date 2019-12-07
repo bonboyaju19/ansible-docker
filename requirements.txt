@@ -1,0 +1,4 @@
+ansible>=2.9.2
+docker>=1.8.0
+PyYAML>=3.11,<5
+docker-compose>=1.7.0
