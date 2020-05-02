@@ -1,8 +1,0 @@
-FROM python:3.6.9-alpine3.10
-LABEL maintainer=bonboyaju19@gmail.com
-
-COPY requirements.txt ./
-RUN apk add musl-dev gcc libffi-dev openssl-dev && \
-    pip install --no-cache-dir -r requirements.txt
-
-CMD ["ansible-playbook", "--version"]
