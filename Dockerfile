@@ -4,7 +4,7 @@ LABEL maintainer=bonboyaju19@gmail.com
 COPY requirements.txt ./
 RUN apt upgrade && \
     apt update && \
-    apt install -y ssh && \
+    apt install -y ssh sshpass && \
     pip install --no-cache-dir -r requirements.txt
 
 CMD ["ansible-playbook", "--version"]
